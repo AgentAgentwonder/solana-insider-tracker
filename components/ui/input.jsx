@@ -1,8 +1,8 @@
-export function Input({ className = "", ...props }) {
+export function Input({ className = '', ...props }) {
   return (
     <input
-      className={`border rounded-xl px-3 py-2 w-full outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
       {...props}
+      className={`border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-blue-500 ${className}`}
     />
-  );
+  )
 }
