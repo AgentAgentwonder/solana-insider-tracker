@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: solana-insider-web
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+  - type: worker
+    name: solana-insider-worker
+    env: node
+    plan: free
+    startCommand: npm run worker
